@@ -82,8 +82,8 @@
                 >;
             layer-id = <LAYER_Numbers>;
         };
-  }
-}
+  };
+};
 
 /* Input Listeners */
 
