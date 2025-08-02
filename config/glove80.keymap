@@ -18,6 +18,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/rgb_colors.h>
 
 /* On demand includes */
 
@@ -70,19 +71,19 @@
     underglow-layer {
         compatible  = "zmk,underglow-layer";
 
-        base {
+        numbers {
             bindings = <
-                &ug ___ &ug ___  &ug ___ &ug ___ &ug ___                                                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___                                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___                                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug TEAL &ug ___ &ug RED &ug ___ &ug ___                                                        &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug BLUE &ug RED &ug RED &ug RED &ug ___ &ug ORANGE &ug BLUE &ug ___    &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug BLUE &ug ___ &ug ___ &ug ___         &ug RED    &ug ___  &ug GREEN  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug TEAL &ug TEAL &ug TEAL &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug TEAL &ug TEAL &ug TEAL &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug TEAL &ug TEAL &ug TEAL &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 >;
-            layer-id = <LAYER_Base>;
+            layer-id = <LAYER_Numbers>;
         };
-    };
-};
+  }
+}
 
 /* Input Listeners */
 
