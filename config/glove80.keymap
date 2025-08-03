@@ -66,10 +66,29 @@
 #define LAYER_Lower 0
 #endif
 
+/* Bright blue */
+#define BBL 0xd4f4ff
+/* Bright purple */
+#define BPR 0xff30fb
+/* Bright green */
+#define BGR 0x8bfda5
+
 /* Custom Device-tree */
 / {
     underglow-layer {
         compatible  = "zmk,underglow-layer";
+
+        base {
+            bindings = <
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug BGR &ug BGR &ug BGR &ug BGR &ug BGR                                                  &ug BGR &ug BGR &ug BGR &ug BGR &ug BGR &ug ___
+                &ug ___ &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL                                                  &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL &ug ___
+                &ug ___ &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL                                                  &ug BBL &ug BBL &ug BBL &ug BBL &ug ___ &ug ___
+                &ug ___ &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug BBL &ug BBL &ug ___ &ug ___ &ug BPR &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug BPR &ug BPR &ug BPR
+                >;
+            layer-id = <LAYER_Base>;
+        };
 
         numbers {
             bindings = <
