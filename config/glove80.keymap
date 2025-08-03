@@ -73,7 +73,7 @@
 /* Arrows */
 #define CL3 0x800080
 /* Highlighted primary */
-#define CL4 0x1489ff
+#define CL4 0x55aaff
 
 /* Custom Device-tree */
 / {
