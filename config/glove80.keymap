@@ -66,16 +66,14 @@
 #define LAYER_Lower 0
 #endif
 
-/* Bright blue */
-#define BBL 0x00acff
-/* More bright blue */
-#define MBL 0x72d1ff
-/* Bright purple */
-#define BPR 0x800080
-/* Bright green */
-#define BGR 0x00ff00
-/* Bright yellow */
-#define BYK 0xffd700
+/* Primary */
+#define CL1 0x00acff
+/* Secondary */
+#define CL2 0x00ff00
+/* Arrows */
+#define CL3 0x800080
+/* Highlighted primary */
+#define CL4 0x1489ff
 
 /* Custom Device-tree */
 / {
@@ -85,11 +83,11 @@
         base {
             bindings = <
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug BGR &ug BGR &ug BGR &ug BGR &ug BGR                                                  &ug BGR &ug BGR &ug BGR &ug BGR &ug BGR &ug ___
-                &ug ___ &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL                                                  &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL &ug ___
-                &ug ___ &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL                                                  &ug BBL &ug BBL &ug BBL &ug BBL &ug ___ &ug ___
-                &ug ___ &ug BBL &ug BBL &ug BBL &ug BBL &ug BBL &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug BBL &ug BBL &ug ___ &ug ___ &ug BPR &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug BPR &ug BPR &ug BPR
+                &ug ___ &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2                                                  &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug ___
+                &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___
+                &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
+                &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL3 &ug ___ &ug ___  &ug ___ &ug ___ &ug CL3 &ug CL1 &ug CL1 &ug ___ &ug ___ &ug CL3 &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug CL3 &ug CL3 &ug CL3
                 >;
             layer-id = <LAYER_Base>;
         };
@@ -98,9 +96,9 @@
             bindings = <
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug BBL &ug BBL &ug MBL &ug MBL &ug BBL                                                  &ug ___ &ug BBL &ug BBL &ug BBL &ug ___ &ug ___
-                &ug ___ &ug BBL &ug BBL &ug MBL &ug MBL &ug BBL                                                  &ug BBL &ug BBL &ug BBL &ug BBL &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug MBL &ug MBL &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug BBL &ug BBL &ug BBL &ug BBL &ug ___ &ug ___
+                &ug ___ &ug CL1 &ug CL1 &ug CL4 &ug CL4 &ug CL1                                                  &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
+                &ug ___ &ug CL1 &ug CL1 &ug CL4 &ug CL4 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug CL4 &ug CL4 &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 >;
             layer-id = <LAYER_Symbols>;
@@ -110,10 +108,10 @@
             bindings = <
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug BGR &ug BYK &ug BYK &ug BYK &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug BGR &ug BYK &ug BYK &ug BYK &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug BGR &ug BYK &ug BYK &ug BYK &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug BYK &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug CL2 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug CL2 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug CL2 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug CL1 &ug ___ &ug ___ &ug ___
                 >;
             layer-id = <LAYER_Numbers>;
         };
@@ -122,8 +120,8 @@
             bindings = <
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug BPR &ug ___ &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug BPR &ug BPR &ug BPR &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug CL3 &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug CL3 &ug CL3 &ug CL3 &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 >;
