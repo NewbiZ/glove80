@@ -66,6 +66,8 @@
 #endif
 
 /* Custom Device-tree */
+/* No color */
+#define ___ 0x000000
 /* Primary */
 #define CL1 0x00acff
 /* Secondary */
