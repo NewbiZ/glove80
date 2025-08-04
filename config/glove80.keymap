@@ -74,6 +74,8 @@
 #define CL3 0x800080
 /* Highlighted primary */
 #define CL4 0x55aaff
+/* Neutral color */
+#define CL5 0xffffff
 
 /* Custom Device-tree */
 / {
@@ -82,12 +84,12 @@
 
         base {
             bindings = <
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                                         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-                &ug ___ &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2                                                         &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug ___
-                &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                         &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___
-                &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                         &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
-                &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL3 &ug    ___     &ug ___  &ug ___ &ug ___ &ug CL3 &ug CL1 &ug CL1 &ug ___ &ug ___ &ug CL3 &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug_cl ___ RED &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug CL3 &ug CL3 &ug CL3
+                &ug CL5 &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2                                                  &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug ___
+                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL5
+                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug CL5
+                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL3 &ug ___ &ug ___  &ug ___ &ug ___ &ug CL3 &ug CL1 &ug CL1 &ug ___ &ug ___ &ug CL3 &ug ___
+                &ug CL5 &ug ___ &ug ___ &ug ___ &ug CL5         &ug CL5 &ug CL5 &ug ___  &ug ___ &ug CL5 &ug CL5         &ug ___ &ug CL5 &ug CL3 &ug CL3 &ug CL3
                 >;
             layer-id = <LAYER_Base>;
         };
