@@ -90,7 +90,7 @@
                 &ug ___ &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2                                                  &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug ___
                 &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL5
                 &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL5 &ug CL5
-                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL3 &ug ___ &ug ___  &ug ___ &ug ___ &ug CL3 &ug CL1 &ug CL1 &ug CL5 &ug CL5 &ug CL3 &ug ___
+                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug CL1 &ug CL1 &ug CL5 &ug CL5 &ug CL3 &ug ___
                 &ug CL5 &ug ___ &ug ___ &ug ___ &ug CL5         &ug CL5 &ug CL5 &ug ___  &ug ___ &ug CL5 &ug CL5         &ug ___ &ug CL5 &ug CL3 &ug CL3 &ug CL3
                 >;
             layer-id = <LAYER_Base>;
@@ -126,7 +126,7 @@
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug ___ &ug CL3 &ug ___ &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___                                                  &ug ___ &ug CL3 &ug CL3 &ug CL3 &ug ___ &ug ___
-                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug ___
                 &ug ___ &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 >;
             layer-id = <LAYER_Navigation>;
@@ -495,12 +495,12 @@
 
         layer_Navigation {
             bindings = <
-  &none   &none   &none   &none   &none                                                                           &none     &none      &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none           &none     &none      &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none           &none    &kp UP      &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none  &mmv MOVE_LEFT  &kp DOWN  &kp RIGHT   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none           &none     &none      &none   &none   &none
-  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none   &none                   &none     &none      &none   &none   &none
+  &none   &none   &none   &none   &none                                                                           &none           &none            &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &none           &none           &none            &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &none           &none    &mmv MOVE_UP            &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none        &mkp MB1        &mkp MB3         &mkp MB2   &none   &none
+  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none   &none                   &none           &none            &none   &none   &none
             >;
         };
 
