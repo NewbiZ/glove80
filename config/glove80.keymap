@@ -18,10 +18,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/rgb_colors.h>
 
 /* On demand includes */
-
+#include <dt-bindings/zmk/pointing.h>
 
 /* Helper Macros, based on https://github.com/urob/zmk-helpers/ */
 
@@ -66,6 +65,7 @@
 #define LAYER_Lower 0
 #endif
 
+/* Custom Device-tree */
 /* Primary */
 #define CL1 0x00acff
 /* Secondary */
@@ -449,12 +449,12 @@
 
         layer_Base {
             bindings = <
-   &kp ESC  &magic LAYER_Magic 0  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bootloader                                                                                                                    &bootloader      &none     &none     &none      &none
-     &none                &kp N1           &kp N2           &kp N3       &kp N4  &kp N5                                                                                                    &kp N6       &kp N7     &kp N8    &kp N9    &kp N0      &none
-   &kp TAB                 &kp Q            &kp W            &kp E        &kp R   &kp T                                                                                                     &kp Y        &kp U      &kp I     &kp O     &kp P   &kp BSLH
- &kp PG_UP                 &kp A            &kp S            &kp D        &kp F   &kp G                                                                                                     &kp H        &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
- &kp PG_DN                 &kp Z            &kp X            &kp C        &kp V   &kp B     &kp HOME                                   &ctrl_c  &ctrl_v  &shift_insert    &none   &kp END   &kp N        &kp M  &kp COMMA   &kp DOT    &kp UP      &none
- &kp LCTRL                 &none            &none            &none     &kp LALT          &lt 1 SPACE  &mt_key_capsword LSHFT MACRO_PLACEHOLDER    &mo 4          &none  &kp RET  &kp BSPC                &mo 2   &kp FSLH  &kp LEFT  &kp DOWN  &kp RIGHT
+   &kp ESC  &magic LAYER_Magic 0  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bootloader                                                                                                                   &bootloader      &none     &none     &none      &none
+     &none                &kp N1           &kp N2           &kp N3       &kp N4  &kp N5                                                                                                   &kp N6       &kp N7     &kp N8    &kp N9    &kp N0      &none
+   &kp TAB                 &kp Q            &kp W            &kp E        &kp R   &kp T                                                                                                    &kp Y        &kp U      &kp I     &kp O     &kp P   &kp BSLH
+ &kp PG_UP                 &kp A            &kp S            &kp D        &kp F   &kp G                                                                                                    &kp H        &kp J      &kp K     &kp L  &kp SEMI    &kp SQT
+ &kp PG_DN                 &kp Z            &kp X            &kp C        &kp V   &kp B    &sk LCTRL                                     &none   &none  &shift_insert    &none     &none   &kp N        &kp M  &kp COMMA   &kp DOT    &kp UP      &none
+ &kp LCTRL                 &none            &none            &none     &kp LALT          &lt 1 SPACE  &mt_key_capsword LSHFT MACRO_PLACEHOLDER   &mo 4          &none  &kp RET  &kp BSPC                &mo 2   &kp FSLH  &kp LEFT  &kp DOWN  &kp RIGHT
             >;
         };
 
@@ -493,12 +493,12 @@
 
         layer_Navigation {
             bindings = <
-  &none   &none   &none   &none   &none                                                                     &none     &none      &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none     &none     &none      &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none     &none    &kp UP      &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none  &kp LEFT  &kp DOWN  &kp RIGHT   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none     &none     &none      &none   &none   &none
-  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none   &none             &none     &none      &none   &none   &none
+  &none   &none   &none   &none   &none                                                                           &none     &none      &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &none           &none     &none      &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &none           &none    &kp UP      &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &none  &mmv MOVE_LEFT  &kp DOWN  &kp RIGHT   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none           &none     &none      &none   &none   &none
+  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none   &none                   &none     &none      &none   &none   &none
             >;
         };
 
