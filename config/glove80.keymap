@@ -87,8 +87,8 @@
                 &ug CL5 &ug ___ &ug ___ &ug ___ &ug ___                                                                  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
                 &ug ___ &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2                                                  &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug CL2 &ug ___
                 &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL5
-                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug ___ &ug CL5
-                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL3 &ug ___ &ug ___  &ug ___ &ug ___ &ug CL3 &ug CL1 &ug CL1 &ug ___ &ug ___ &ug CL3 &ug ___
+                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1                                                  &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL5 &ug CL5
+                &ug CL5 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL1 &ug CL3 &ug ___ &ug ___  &ug ___ &ug ___ &ug CL3 &ug CL1 &ug CL1 &ug CL5 &ug CL5 &ug CL3 &ug ___
                 &ug CL5 &ug ___ &ug ___ &ug ___ &ug CL5         &ug CL5 &ug CL5 &ug ___  &ug ___ &ug CL5 &ug CL5         &ug ___ &ug CL5 &ug CL3 &ug CL3 &ug CL3
                 >;
             layer-id = <LAYER_Base>;
